@@ -5,7 +5,10 @@
 
 <div class="relative overflow-clip">
   <div
-    class="board flex items-center justify-center bg-gradient-to-b from-blue-600/50 to-50% to-blue-600 from-50% size-[4.25rem] sm:size-[8rem] rounded-md shadow-lg before:bg-blue-800 after:bg-blue-800"
+    class="board flex items-center justify-center
+    bg-gradient-to-b from-blue-600/50 to-50% to-blue-600 from-50%
+    size-[4.25rem] sm:size-[8rem] rounded-md shadow-lg
+    before:bg-blue-800 after:bg-blue-800"
   >
     <p class="text-primary-red text-xl sm:text-[4.5rem]">
       {value.toLocaleString('en-US', { minimumIntegerDigits: 2 })}
