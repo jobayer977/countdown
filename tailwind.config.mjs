@@ -13,7 +13,7 @@ export default {
       colors: {
         'primary-blue': 'hsl(237, 18%, 59%)',
         'primary-red': 'hsl(345, 95%, 68%)',
-        purple: '#30233A',
+        purple: 'hsl(274, 25%, 15%)',
         'blue-600': 'hsl(236, 21%, 26%)',
         'blue-800': 'hsl(235, 16%, 14%)',
         'blue-900': 'hsl(234, 17%, 12%)',

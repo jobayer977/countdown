@@ -1,9 +1,10 @@
 <script>
   import Counter from './Counter.svelte';
+  import Footer from './Footer.svelte';
 </script>
 
 <body
-  class="grid grid-rows-[1fr_auto] items-center min-h-lvh bg-gradient-to-b from-blue-800 to-purple bg-blue-800 font-bold text-center"
+  class="grid grid-rows-[1fr_auto] items-center min-h-lvh bg-gradient-to-b from-blue-800 to-purple font-bold text-center"
 >
   <main class="px-6">
     <h1
@@ -13,5 +14,5 @@
     </h1>
     <Counter />
   </main>
-  <div class="p-20 bg-purple"></div>
+  <Footer />
 </body>
