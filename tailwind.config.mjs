@@ -7,7 +7,7 @@ export default {
       sm: '0.5625rem',
       base: '0.875rem',
       md: '1.375rem',
-      xl: '2.5rem',
+      xl: '2.25rem',
     },
     extend: {
       colors: {
