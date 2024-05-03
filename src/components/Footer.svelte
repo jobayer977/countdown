@@ -18,7 +18,7 @@
 
 <style>
   footer {
-    background-image: url('/images/pattern-hills.svg');
+    background-image: url('/countdown/images/pattern-hills.svg');
     background-size: cover;
     background-position: top;
   }
