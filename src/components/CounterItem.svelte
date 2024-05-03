@@ -1,11 +1,31 @@
 <script>
+  import { beforeUpdate, onMount } from 'svelte';
+
   export let label;
   export let value = 0;
+
+  let boardElement = undefined;
+
+  onMount(() => {
+    boardElement = document.getElementById(`board-${label}`);
+  });
+
+  // Fix this, it's optimized and not working
+  beforeUpdate(() => {
+    if (boardElement) {
+      boardElement.classList.remove('flip-animation');
+
+      setTimeout(() => {
+        boardElement.classList.toggle('flip-animation');
+      }, 10);
+    }
+  });
 </script>
 
 <div class="relative overflow-clip">
   <div
-    class="board flex items-center justify-center
+    id={`board-${label}`}
+    class="board flip-animation flex items-center justify-center
     bg-gradient-to-b from-blue-600/50 to-50% to-blue-600 from-50%
     size-[4.25rem] sm:size-[8rem] rounded-md shadow-lg
     before:bg-blue-800 after:bg-blue-800"
@@ -22,6 +42,15 @@
 </div>
 
 <style>
+  .board {
+    transform: rotateX(90deg);
+  }
+
+  .flip-animation {
+    transform: none;
+    transition: transform 400ms ease-out;
+  }
+
   .board::before,
   .board::after {
     --radius: 0.5rem;

@@ -3,7 +3,7 @@
   import CounterItem from './CounterItem.svelte';
 
   // Timestamp in seconds
-  const targetTime = 1720519200;
+  let targetTime = 1720519200;
 
   let intervalId = undefined;
 
@@ -13,6 +13,10 @@
   let seconds = 0;
 
   onMount(() => {
+    // Set time for testing purposes
+    const currentTime = new Date().getTime();
+    targetTime = currentTime / 1000 + 86470;
+
     updateCountdown();
     intervalId = setInterval(updateCountdown, 1000);
   });
