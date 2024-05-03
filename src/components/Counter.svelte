@@ -2,8 +2,7 @@
   import { onMount, onDestroy } from 'svelte';
   import CounterItem from './CounterItem.svelte';
 
-  // Timestamp in seconds
-  let targetTime = 1720519200;
+  let targetTime;
 
   let intervalId = undefined;
 
@@ -13,9 +12,9 @@
   let seconds = 0;
 
   onMount(() => {
-    // Set time for testing purposes
+    // Set timer for 14 days
     const currentTime = new Date().getTime();
-    targetTime = currentTime / 1000 + 86470;
+    targetTime = currentTime / 1000 + 1209600;
 
     updateCountdown();
     intervalId = setInterval(updateCountdown, 1000);
