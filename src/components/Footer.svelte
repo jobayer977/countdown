@@ -20,7 +20,7 @@
   footer {
     background-image: url('/images/pattern-hills.svg');
     background-size: cover;
-    background-position: center;
+    background-position: top;
   }
 
   @media only screen and (max-width: 640px) {

@@ -17,7 +17,7 @@
 
       setTimeout(() => {
         boardElement.classList.toggle('flip-animation');
-      }, 10);
+      }, 50);
     }
   });
 </script>
