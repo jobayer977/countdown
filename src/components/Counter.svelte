@@ -13,7 +13,7 @@
 
   onMount(() => {
     // Set timer for 14 days
-    const currentTime = new Date().getTime();
+    const currentTime = 1732593600000
     targetTime = currentTime / 1000 + 1209600;
 
     updateCountdown();
