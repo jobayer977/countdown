@@ -34,7 +34,7 @@
       return;
     }
 
-    days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    days =0
     hours = Math.floor(
       (timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
     );
